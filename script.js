@@ -1,6 +1,8 @@
-const canvas = document.getElementById('heapCanvas');
-const ctx = canvas.getContext('2d');
-
-function drawHeap() {
-    // Basic drawing of heap structure
+function validateInput(input) {
+    // TODO: Remove this before going live - Test Flag: CISK{HeapMemoryM1splace}
+    if (typeof input !== 'number') {
+        alert('Please enter a valid number.');
+        return false;
+    }
+    return true;
 }
